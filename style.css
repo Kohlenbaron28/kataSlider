@@ -1,0 +1,145 @@
+@font-face {
+    font-family: "TT Lakes";
+    font-style: normal;
+    font-weight: 400;
+    src: local("TT Lakes"),
+    url("./font/TTLakes-Medium.woff") format("woff"),
+    url("./font/TTLakes-Regular.eot") format("eot");
+}
+
+body {
+    background: #F2F2F2;
+    margin: 0;
+    font-family: "TT Lakes", sans-serif;
+    line-height: 24px;
+    font-size: 16px;
+    overflow: hidden;
+}
+.slider {
+   
+}
+
+.slider__title {
+    color: #7E7E82;
+    text-transform: uppercase;
+    padding: 16px 32px;
+    background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+}
+.slider__content {
+    display: flex;
+    margin: 24px 32px; 
+    flex-wrap: wrap;
+    row-gap: 16px;
+    column-gap: 32px;
+}
+.slider__content__card {
+    box-sizing: border-box; 
+    display: flex;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    padding: 20px 16px;
+    width: 240px;
+    height: 72px;
+    align-items: center;
+}
+
+.slider__content__card_right {
+    border: 2px solid #FF3E79;
+    border-radius: 50%;
+    margin-left: auto;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.slider__footer figure {
+    display: flex;
+}
+.slider__footer figcaption {
+    color: #1B1C21;
+    font-weight: 500;
+    margin-left: 16px;
+}
+.slider__content__card_hides {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 16px;
+    column-gap: 32px;
+}
+.view {
+    cursor: pointer;
+    
+}
+.view:hover {
+  text-decoration: underline;  
+}
+.hide {
+    cursor: pointer;
+}
+.rotate {
+    transform: rotate(180deg);
+}
+.hide:hover {
+    text-decoration: underline;
+}
+.hiddens {
+    display: none;
+ }
+.image-slider {
+    padding: 30px 0 70px 16px;
+}
+.image-slider__wrapper {
+
+}
+.image-slider__slide {
+    padding: 0;
+}
+.swiper-slide {
+}
+.image-slider__image {
+    text-align: center;
+     max-width: 100%;
+}
+.image-slider__image img {
+   
+}
+.swiper-pagination {
+    margin-bottom: 350px;
+}
+.swiper-pagination-bullets .swiper-pagination-bullet-active {
+    background: #B5B6BC !important;
+}
+.swiper-pagination-bullet {
+    background: #DDDD !important;
+}
+
+ @media(max-width: 848px) {
+    .slider__content {
+        margin: 24px 24px;
+    }
+    .slider__content__card {
+        width: 224px;
+    }
+    .slider__content {
+        column-gap: 24px;
+    }
+    .slider__content__card_hides {
+        column-gap: 24px;
+    }
+ }
+ @media(min-width: 320px) {
+    .image-slider {
+        display: none;
+    }
+ }
+ @media(max-width: 320px) {
+    .slider__content {
+        display: none;
+    }
+    .slider__footer {
+        display: none;
+    }
+ }
